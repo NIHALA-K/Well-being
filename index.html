@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Digital Well-Being Tracker</title>
+  <style>
+    /* Basic Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Arial', sans-serif;
+      line-height: 1.6;
+      background-color: #f4f4f9;
+      color: #333;
+    }
+
+    h1, h2, h3 {
+      font-weight: 300;
+    }
+
+    /* Global Styling */
+    header {
+      background: #34495e;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    header h1 {
+      font-size: 2.5em;
+      margin: 0;
+      letter-spacing: 1px;
+    }
+
+    header nav {
+      margin-top: 20px;
+    }
+
+    header nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 15px;
+      font-size: 1.2em;
+      transition: color 0.3s ease;
+    }
+
+    header nav a:hover {
+      color: #f39c12;
+    }
+
+    .container {
+      width: 90%;
+      margin: 0 auto;
+    }
+
+    section {
+      padding: 50px 0;
+    }
+
+    section h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      font-size: 2em;
+    }
+
+    .section-content {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      text-align: center;
+    }
+
+    .feature-card {
+      background: #fff;
+      padding: 20px;
+      margin: 20px;
+      width: 280px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .feature-card:hover {
+      transform: translateY(-10px);
+    }
+
+    .feature-card i {
+      font-size: 2em;
+      margin-bottom: 10px;
+      color: #2ecc71;
+    }
+
+    .feature-card h3 {
+      margin-bottom: 10px;
+    }
+
+    .feature-card p {
+      font-size: 1em;
+      color: #7f8c8d;
+    }
+
+    /* Animations */
+    .fade-in {
+      animation: fadeIn 1.5s ease-in;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+
+    /* Footer Styling */
+    footer {
+      background: #34495e;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+      font-size: 1em;
+    }
+
+    footer a {
+      color: #f39c12;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    /* Mobile Responsiveness */
+    @media screen and (max-width: 768px) {
+      .section-content {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .feature-card {
+        width: 90%;
+      }
+
+      header nav a {
+        font-size: 1em;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Digital Well-Being Tracker</h1>
+    <p>Track, Manage & Improve Your Mental and Digital Health</p>
+
+    <!-- Navigation Menu -->
+    <nav>
+      <a href="#dashboard">Dashboard</a>
+      <a href="#reminders">Break Reminders</a>
+      <a href="#tools">Interactive Tools</a>
+      <a href="#resources">Resources</a>
+      <a href="#community">Community Hub</a>
+      <a href="#ai-advisor">AI Advisor</a>
+    </nav>
+  </header>
+
+  <!-- Digital Health Dashboard -->
+  <section id="dashboard" class="fade-in">
+    <div class="container">
+      <h2>1. Digital Health Dashboard</h2>
+      <p>This is your personalized dashboard for tracking your digital health and well-being. Monitor your screen time, habits, and progress.</p>
+    </div>
+  </section>
+
+  <!-- Break & Relaxation Reminders -->
+  <section id="reminders" class="fade-in">
+    <div class="container">
+      <h2>2. Break & Relaxation Reminders</h2>
+      <p>Get gentle reminders to take breaks, relax, and recharge your mind.</p>
+    </div>
+  </section>
+
+  <!-- Interactive Tools -->
+  <section id="tools">
+    <div class="container">
+      <h2>3. Interactive Tools</h2>
+      <div class="section-content">
+        <div class="feature-card fade-in">
+          <i class="fas fa-stethoscope"></i>
+          <h3>Stress Tracker</h3>
+          <p>Monitor your stress levels and learn ways to reduce stress effectively.</p>
+        </div>
+        <div class="feature-card fade-in">
+          <i class="fas fa-sun"></i>
+          <h3>Mood Journal</h3>
+          <p>Track your moods daily to identify patterns and improve mental health.</p>
+        </div>
+        <div class="feature-card fade-in">
+          <i class="fas fa-bolt"></i>
+          <h3>Digital Detox Planner</h3>
+          <p>Create and stick to your digital detox plan for a healthier balance.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Resource Selection -->
+  <section id="resources" class="fade-in">
+    <div class="container">
+      <h2>4. Resource Selection</h2>
+      <p>Access a curated collection of educational content to help you improve your digital well-being.</p>
+    </div>
+  </section>
+
+  <!-- Community Hub -->
+  <section id="community">
+    <div class="container">
+      <h2>5. Community Hub</h2>
+      <p>Join a community of like-minded individuals who support each other on their well-being journey.</p>
+    </div>
+  </section>
+
+  <!-- AI-Powered Well-Being Advisor -->
+  <section id="ai-advisor" class="fade-in">
+    <div class="container">
+      <h2>6. AI-Powered Well-Being Advisor</h2>
+      <p>Get personalized advice and recommendations to improve your mental and digital well-being.</p>
+    </div>
+  </section>
+
+  <!-- Contact Info -->
+  <footer>
+    <p>For more information and feedback, contact us at <a href="mailto:support@mentalappgmail.com">support@mentalappgmail.com</a></p>
+  </footer>
+
+  <!-- FontAwesome for Icons (Optional, remove if not needed) -->
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</body>
+</html>
